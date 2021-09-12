@@ -18,14 +18,14 @@
     text-align: left;
     margin: 3em auto;
   }
-  li .icon {
+  ul > li > span.icon {
     filter: grayscale(100%);
     opacity: 0.2;
     margin-right: 0.3em;
     width: 1.3em;
     display: inline-block;
   }
-  li .icon.done {
+  ul > li > span.icon.done {
     opacity: 1;
     filter: none;
   }

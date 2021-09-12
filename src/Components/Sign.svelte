@@ -16,4 +16,7 @@
   a {
     color: #ff3e00;
   }
+  a:visited{    
+    color: #cc3300;
+  }
 </style>
