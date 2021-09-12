@@ -36,7 +36,7 @@ jobs:
         uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
         with:
           html_path: ${{ env.PUBLISH_DIR }}/index.html
-          base_href: /${{ github.repository.name }}/
+          base_href: /${{ github.event.repository.name }}/
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
