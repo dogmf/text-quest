@@ -28,6 +28,12 @@ jobs:
 
       - name: Build
         run: npm run-script build
+        
+      - name: Set Base
+        uses: SteveSandersonMS/ghaction-rewrite-base-href@v1
+        with:
+          html_path: './public/index.html'
+          base_href: '/${{ github.repository.name }}/'
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
